@@ -1,0 +1,44 @@
+{
+  "name": "@marko/review",
+  "version": "0.1.0",
+  "description": "Marko: dev-only UI review overlay for React. Annotate the live UI, collect comments, export as Markdown or JSON. Zero dependencies.",
+  "type": "module",
+  "main": "./dist/marko.cjs",
+  "module": "./dist/marko.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/marko.js",
+      "require": "./dist/marko.cjs"
+    }
+  },
+  "files": ["dist"],
+  "sideEffects": false,
+  "author": "Aghyad Alahmad",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aghyad97/marko.git"
+  },
+  "keywords": ["react", "annotation", "review", "feedback", "overlay", "dev-tool"],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -p tsconfig.build.json && vite build",
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "typescript": "^5.6.3",
+    "vite": "^6.0.3",
+    "vite-plugin-dts": "^4.3.0"
+  },
+  "license": "MIT"
+}
